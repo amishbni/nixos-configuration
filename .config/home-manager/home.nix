@@ -68,9 +68,24 @@
   #  /etc/profiles/per-user/ami/etc/profile.d/hm-session-vars.sh
   #
   home.sessionVariables = {
-    # EDITOR = "emacs";
+     GIT_EDITOR = "vim";
   };
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
+
+  # ZSH
+  programs.zsh = {
+    enable = true;
+    oh-my-zsh.enable = true;
+    enableCompletion = true;
+    syntaxHighlighting = {
+      enable = true;
+    };
+
+    shellAliases = {
+      update = "sudo nixos-rebuild switch";
+      yo = "echo yo";
+    };
+  };
 }
