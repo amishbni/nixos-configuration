@@ -85,6 +85,7 @@
   # ZSH
   programs.zsh = {
     enable = true;
+    ohMyZsh.enable = true;
     enableCompletion = true;
     autosuggestions.enable = true;
     syntaxHighlighting.enable = true;
@@ -93,10 +94,7 @@
       update = "sudo nixos-rebuild switch";
     };
 
-    ohMyZsh = {
-      enable = true;
-      theme = "powerlevel10k/powerlevel10k";
-    };
+    promptInit = "source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
   };
 
   # Allow unfree packages
