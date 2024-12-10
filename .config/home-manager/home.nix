@@ -77,8 +77,11 @@
   # ZSH
   programs.zsh = {
     enable = true;
-    oh-my-zsh.enable = true;
     enableCompletion = true;
+
+    oh-my-zsh = {
+      enable = true;
+    };
 
     autosuggestion = {
       enable = true;
@@ -96,7 +99,6 @@
 
     shellAliases = {
       update = "sudo nixos-rebuild switch";
-      yo = "echo yo";
     };
   };
 }
