@@ -88,6 +88,12 @@
       enable = true;
     };
 
+    history = {
+        size = 1000000;
+        save = 1000000;
+        path = "$HOME/.zsh_history";
+    };
+
     shellAliases = {
       update = "sudo nixos-rebuild switch";
       yo = "echo yo";
