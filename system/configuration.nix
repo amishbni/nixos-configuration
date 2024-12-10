@@ -112,6 +112,14 @@
     neofetch
     neovim
     openconnect
+    # python
+    python3Full
+    python310Full
+    python311Full
+    python312Full
+    python313Full
+    python314Full
+
     telegram-desktop
     vim
     zsh
