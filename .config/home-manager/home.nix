@@ -68,7 +68,7 @@
   #  /etc/profiles/per-user/ami/etc/profile.d/hm-session-vars.sh
   #
   home.sessionVariables = {
-     GIT_EDITOR = "vim";
+    GIT_EDITOR = "nvim";
   };
 
   # Let Home Manager install and manage itself.
@@ -92,9 +92,9 @@
     };
 
     history = {
-        size = 1000000;
-        save = 1000000;
-        path = "$HOME/.zsh_history";
+      size = 1000000;
+      save = 1000000;
+      path = "$HOME/.zsh_history";
     };
 
     shellAliases = {
