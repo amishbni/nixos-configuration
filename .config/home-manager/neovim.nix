@@ -4,7 +4,9 @@
   home.packages = with pkgs; [ neovim ];
 
   programs.neovim = {
-    extraConfig = lib.fileContents "~/.config/nvim/init.vim";
+    plugins = with pkgs.vimPlugins; [
+        lazy-nvim
+    ];
   };
 }
 
