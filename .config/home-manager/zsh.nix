@@ -27,6 +27,7 @@
 
     shellAliases = {
       update = "sudo nixos-rebuild switch";
+      vim = "nvim";
     };
 
     initExtra = ''
