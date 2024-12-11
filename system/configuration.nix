@@ -99,6 +99,7 @@
     neofetch
     neovim
     openconnect
+
     # python
     python3Full
     python310Full
@@ -106,6 +107,9 @@
     python312Full
     python313Full
     python314Full
+
+    # fonts
+    nerdfonts
 
     telegram-desktop
     vim
