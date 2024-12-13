@@ -71,7 +71,7 @@
   users.users.ami = {
     isNormalUser = true;
     description = "ami";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "docker" ];
     packages = with pkgs; [
     #  thunderbird
     ];
@@ -83,6 +83,7 @@
   # programs
   programs.firefox.enable = true;
   programs.zsh.enable = true;
+  virtualisation.docker.enable = true;
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
