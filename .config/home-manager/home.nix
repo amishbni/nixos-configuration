@@ -77,8 +77,9 @@
   };
 
   dconf.settings = {
-    "org/gnome/desktop/interface" = {
-      color-scheme = "prefer-dark";
+    "org/gnome/desktop/background" = {
+      picture-uri = "file:///home/ami/.config/wallpapers/rick.png";
+      picture-options = "stretched";
     };
   };
 
